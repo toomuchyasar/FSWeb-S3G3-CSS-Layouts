@@ -1,0 +1,89 @@
+body{
+    background-color: grey;
+}
+
+header {
+    height: 9rem;
+}
+
+header .headertext {
+    padding-top: 0.1rem;
+    padding-left: 4rem;
+}
+
+nav {
+    padding-left: 3rem;
+    display: flex;
+}
+
+nav a {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: 0.1rem solid;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+.firstrow {
+    display: flex;
+    background-color: seagreen;
+}
+
+
+.firstphoto {
+    padding: 1rem;
+}
+
+.boyut {
+    width: 50vw;
+    height: 25vw;
+    min-width: 400px;
+    min-height: 200px;
+}
+
+.firsttext {
+    padding: 1rem 0 0 1rem;
+    font-size: 5vw;
+}
+
+.secondtext{
+    padding: 0.5rem 0 0 1rem;
+    font-size: 2vw;
+}
+
+.secondtext a {
+    text-decoration: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: 0.1rem solid;
+    color: black;
+}
+
+.secondrow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    background-color: aqua;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+}
+.secondphoto_img{
+
+}
+
+.footerrow {
+    background-color: grey
+}
+
+.footerrow .ftext {
+    display: flex;
+    justify-content: center;
+}
+
+.footerrow .fbutton {
+    display: flex;
+    justify-content: center;
+    padding: 12px 25px;
+}
