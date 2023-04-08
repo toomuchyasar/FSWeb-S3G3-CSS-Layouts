@@ -1,5 +1,7 @@
 body{
     background-color: grey;
+    width: 100%;
+    height: 100%;
 }
 
 header {
@@ -26,6 +28,8 @@ nav a {
 
 .firstrow {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     background-color: seagreen;
 }
 
@@ -37,8 +41,8 @@ nav a {
 .boyut {
     width: 50vw;
     height: 25vw;
-    min-width: 400px;
-    min-height: 200px;
+    min-width: 300px;
+    min-height: 150px;
 }
 
 .firsttext {
@@ -58,19 +62,10 @@ nav a {
     color: black;
 }
 
-.secondrow {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem 1rem;
-    justify-content: space-between;
-    background-color: aqua;
-}
+
 h3 {
     display: flex;
     justify-content: center;
-}
-.secondphoto_img{
-
 }
 
 .footerrow {
@@ -86,4 +81,84 @@ h3 {
     display: flex;
     justify-content: center;
     padding: 12px 25px;
+}
+
+
+
+.secondrow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    row-gap: 2rem;
+    background-color: aqua;
+}
+
+.secondphoto {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.secondphoto img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-device-width: 501px) and (max-device-width: 800px)  {
+    .firstrow{  
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    }
+    
+    .boyut {
+    height: 5vw;
+    width: 3vw;
+    }
+
+    .firsttext{
+    padding: 0rem;
+    }
+    
+    .secondphoto {
+    width: 200px;
+       
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .boyut {
+        width: 100px;
+    }
+    .secondphoto {
+        width: 100px;
+       
+    }
 }
